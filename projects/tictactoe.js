@@ -24,7 +24,13 @@ boxes.forEach((box)=>{
             box.innerText="X";
             turnO=true;
         }
+        box.disabled=true;
 
         
 });
 });
+const checkWinner=()=>{
+    for(let pattern of winPatterns){
+        console.log(boxes[pattern[0]],boxes[pattern[1]],pattern[2]);
+    }
+}
