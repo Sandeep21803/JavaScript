@@ -25,6 +25,7 @@ boxes.forEach((box)=>{
             turnO=true;
         }
         box.disabled=true;
+        checkWinner();
 
         
 });
@@ -36,4 +37,4 @@ const checkWinner=()=>{
             boxes[pattern[1]].innerText,
             boxes[pattern[2]].innerText);
     }
-}
+};
