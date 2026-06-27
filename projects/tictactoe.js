@@ -10,9 +10,21 @@ const winPatterns=[
     [2,4,7],
     [2,5,8],
     [3,4,5],
-    [6,7,8]
+    [6,7,8],
 ];
 
 boxes.forEach((box)=>{
-    console.log("Box was Clicked");
-})
+    box.addEventListener("click",() =>{
+        console.log("Box was Clicked");
+        if(turnO){
+            box.innerText="0";
+            turnO=false;
+        }
+        else{
+            box.innerText="X";
+            turnO=true;
+        }
+
+        
+});
+});
